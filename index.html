@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Initial Candidate Screening Test</title>
+    <link rel="stylesheet" href="style/app.css" />
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/aes.js"></script>
+<script src="scripts/login.js"></script>
+  </head>
+<form>
+  <body oncontextmenu="mouseclick(this, event)">
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+  
+        <h1 align="center">Initial Candidate Screening Test</h1>
+
+<h4>&oplus; Contact HR to get your test credentials by email. The test consists of 50 multiple-choice questions. Clicking on the answer choice will automatically advance you to the next question. 64 % is Pass mark. Use only left mouse click to select the answer option.</h4>
+<h4>&oplus; This 25-minute test requires your full attention. Switching away from this browser tab/window during the test session will be considered a malpractice attempt, leading to test cancellation and automatic redirection to the results page.</h4>
+<h4>&oplus; Credentials given are valid only for 24 hours from the time you received the email from HR.</h4>
+
+          <input type="text" name="emailidText" autocomplete="off" id="emailidText" maxlength="55" size="0" placeholder="Enter Candidate's Email Id received from Test Credentials Email" />
+    <input type="text" name="keyText" autocomplete="off" id="keyText" maxlength="290" size="70" placeholder="Copy & Paste here Secret Key Text received from Test Credentials Email" />  
+
+ 
+
+    <select id="techStack" name="techStack" width="70">
+		<option value="">Select your Technology Stack</option> 
+		<option value="SpringBoot">Java SpringBoot Microservices</option>
+		<option value="Scala">Python Pyspark Spark Scala</option>
+		<option value="BigData">Big Data</option>
+	</select>
+<br/>
+          <button type="Button" class="btn" id="loginBtn" onclick="return crypt(document.body);" >
+          Start the Test
+          </button>
+      
+      </div>
+    </div>
+  </body>
+  </form>
+</html>
