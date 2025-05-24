@@ -9,6 +9,14 @@
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/aes.js"></script>
 <script src="scripts/login.js"></script>
+
+<style>
+img {
+    max-width: 100%;
+}
+</style>
+
+
   </head>
 <form>
   <body oncontextmenu="mouseclick(this, event)">
@@ -25,13 +33,34 @@
     <input type="text" name="keyText" autocomplete="off" id="keyText" maxlength="290" size="70" placeholder="Copy & Paste here Secret Key Text received from Test Credentials Email" />  
 
  
+<table >
+ 
+  <tr align="center">
+    	<td>	 
 
-    <select id="techStack" name="techStack" width="70">
-		<option value="">Select your Technology Stack</option> 
-		<option value="SpringBoot">Java SpringBoot Microservices</option>
-		<option value="Scala">Python Pyspark Spark Scala</option>
-		<option value="BigData">Big Data</option>
-	</select>
+		<select id="level" name="level" width="70">
+   		 	<option value="">Select your Experience Level</option> 
+   		 	<option value="A">2-5 Years(A)</option>
+    		<option value="SA">6-9 Years(SA)</option>
+			<option value="M">10-14 Years(M)</option>
+  		</select>
+
+     </td>
+	<td>&nbsp;</td><td>&nbsp;</td>
+    	<td>  
+		<select id="techStack" name="techStack" width="70">
+   		 	<option value="">Select your Technology Stack</option> 
+   		 	<option value="SpringBoot">Java SpringBoot Microservices</option>
+    			<option value="Scala">Python Pyspark Spark Scala</option>
+			<option value="BigData">Big Data</option>
+  		</select>
+	</td>
+ 	 
+  </tr>
+ 
+</table>
+
+ 
 <br/>
           <button type="Button" class="btn" id="loginBtn" onclick="return crypt(document.body);" >
           Start the Test
